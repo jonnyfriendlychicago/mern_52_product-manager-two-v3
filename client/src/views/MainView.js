@@ -1,20 +1,20 @@
-// ! findReplace all "Gizmo" with "YourNewEntityName" or whatever your new thing is 
-// ! THEN do similar find replace for "gizmo" Make sure lower case
+// ! findReplace all "Product" with "YourNewEntityName" or whatever your new thing is 
+// ! THEN do similar find replace for "product" Make sure lower case
 import React, { useState } from 'react'
-import GizmoFormCmp from '../components/GizmoFormCmp';
-import GizmoListCmp from '../components/GizmoListCmp';
+import ProductFormCmp from '../components/ProductFormCmp';
+import ProductListCmp from '../components/ProductListCmp';
 
 const MainView = (props) => {
     
-    const [gizmoList, gizmoListSetter] = useState([]);
+    const [productList, productListSetter] = useState([]);
     
     return (
         <main>
             <div className="row_flex_left">
-                <GizmoFormCmp gizmoList={gizmoList} gizmoListSetter={gizmoListSetter} />
+                <ProductFormCmp productList={productList} productListSetter={productListSetter} />
             </div>
             <div className="row_flex_left">
-                <GizmoListCmp gizmoList={gizmoList} gizmoListSetter={gizmoListSetter} />
+                <ProductListCmp productList={productList} productListSetter={productListSetter} />
             </div>
         </main>
     )
